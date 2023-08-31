@@ -8,7 +8,7 @@ import projectFPRA from '../../images/projectFPRA/projectFPRA.jpeg';
 import Navbar from '@/components/Navbar';
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function projects() {
+export default function Projects() {
   const { scrollYProgress } = useScroll();
 
   const parallaxBgY = useTransform(scrollYProgress, [0, 1], ['-50%', '50%']);
