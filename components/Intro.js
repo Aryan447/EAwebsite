@@ -39,10 +39,10 @@ export default function Intro() {
           <div className="parallax-container">
             <motion.div className="parallax-content" style={{ opacity: textOpacity, y: textY }}>
               <div className="flex">
-                <h1 className="font-inter invisible lg:visible -mr-56">Hey There, I'm</h1>
+                <h1 className="font-inter invisible lg:visible -mr-56">Hey There, I&apos;m</h1>
                 <div className="grid">
                   <h1 className="font-inter lg:invisible -ml-5">Hey There</h1>
-                  <h1 className="font-inter lg:invisible -ml-5">I'm</h1>
+                  <h1 className="font-inter lg:invisible -ml-5">I&apos;m</h1>
                 </div>
                 <h1 className="gradient mt-10 -ml-28 lg:ml-20 lg:mt-0 gradient-text font-inter">ARYAN</h1>
               </div>

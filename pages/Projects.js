@@ -1,14 +1,16 @@
 'use client';
 
-import '../../app/globals.css';
+import React from 'react';
+import '../app/globals.css';
 import 'tailwindcss/tailwind.css';
 import ProjectsCard from "@/components/ProjectsCard";
-import carshowHome from '../../images/carShow/carShowHomepage.png';
-import projectFPRA from '../../images/projectFPRA/projectFPRA.jpeg';
+// import carshowHome from '../../images/carShow/carShowHomepage.png';
+import carshowHome from '../images/carShow/carShowHomepage.png';
+import projectFPRA from '../images/projectFPRA/projectFPRA.jpeg';
 import Navbar from '@/components/Navbar';
 import { motion, useScroll, useTransform } from "framer-motion";
 
-export default function Projects() {
+const Projects = () => {
   const { scrollYProgress } = useScroll();
 
   const parallaxBgY = useTransform(scrollYProgress, [0, 1], ['-50%', '50%']);
@@ -37,4 +39,5 @@ export default function Projects() {
       </motion.div>
     </div>
   );
-}
+};
+export default Projects;
