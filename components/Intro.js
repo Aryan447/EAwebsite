@@ -41,12 +41,12 @@ export default function Intro() {
               <div className="flex">
                 <h1 className="font-inter invisible lg:visible -mr-56">Hey There, I&apos;m</h1>
                 <div className="grid">
-                  <h1 className="font-inter lg:invisible -ml-5">Hey There</h1>
-                  <h1 className="font-inter lg:invisible -ml-5">I&apos;m</h1>
+                  <h1 className="font-inter lg:invisible ml-1">Hey There</h1>
+                  <h1 className="font-inter lg:invisible ml-1">I&apos;m</h1>
                 </div>
                 <h1 className="gradient mt-10 -ml-28 lg:ml-20 lg:mt-0 gradient-text font-inter">ARYAN</h1>
               </div>
-              <h1 className="font-inter lg:-mt-8">I Turn Coffee into Code</h1>
+              <h1 className="font-inter lg:-mt-8 ml-1">I Turn Coffee into Code</h1>
             </motion.div>
           </div>
         </motion.div>
