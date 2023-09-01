@@ -46,7 +46,7 @@ export default function Intro() {
                 </div>
                 <h1 className="gradient mt-10 -ml-28 lg:ml-20 lg:mt-0 gradient-text font-inter">ARYAN</h1>
               </div>
-              <h1 className="font-inter lg:-mt-8 ml-1">I Turn Coffee into Code</h1>
+              <h1 className="font-inter lg:-mt-8 ml-2">I Turn Coffee into Code</h1>
             </motion.div>
           </div>
         </motion.div>
