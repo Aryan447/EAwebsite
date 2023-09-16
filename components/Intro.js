@@ -41,7 +41,7 @@ export default function Intro() {
   return (
     <>
       <head>
-        <title>Aryan's Portfolio</title>
+        <title>Aryan &apos s Portfolio</title>
       </head>
       <div className="mt-56 -ml-4 font-extrabold text-4xl">
         <motion.div className="font-extrabold text-4xl" variants={containerVariants} initial="hidden" animate="visible">
