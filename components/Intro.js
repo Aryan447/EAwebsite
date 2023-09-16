@@ -1,5 +1,6 @@
 'use client';
 
+import Head from "next/head";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import img1 from '.././images/captures/img1.jpg'
@@ -41,7 +42,7 @@ export default function Intro() {
   return (
     <>
       <head>
-        <title>Aryan &apos s Portfolio</title>
+        <title>Aryan&apos;s Portfolio</title>
       </head>
       <div className="mt-56 -ml-4 font-extrabold text-4xl">
         <motion.div className="font-extrabold text-4xl" variants={containerVariants} initial="hidden" animate="visible">
@@ -49,14 +50,15 @@ export default function Intro() {
             <motion.div className="parallax-content" style={{ opacity: textOpacity }}>
               <div className="flex">
                 <motion.h1 className="large-screen font-inter invisible lg:visible -mr-60" style={{ x: leftTextX }}>
-                  Hey There, I'm
+                  Hey There, I&apos;m
                 </motion.h1>
+
                 <div className="grid">
                   <motion.h1 className="font-inter lg:invisible -ml-1" style={{ x: leftTextX }}>
                     Hey There
                   </motion.h1>
                   <motion.h1 className="font-inter lg:invisible -ml-1" style={{ x: leftTextX }}>
-                    I'm
+                    I&apos;m
                   </motion.h1>
                 </div>
                 <motion.h1 className="gradient mt-10 -ml-28 lg:ml-20 lg:mt-0 gradient-text font-inter" style={{ x: leftTextX }}>
@@ -96,10 +98,10 @@ export default function Intro() {
           {/* <Image src={img4} width={190} height={200} className="rounded-xl" /> */}
         </div>
         <div className="mt-10 flex ml-3 gap-2 mr-3">
-          <motion.div style={{ x: leftImageX, transition: { delay: 0.6 }}}>
+          <motion.div style={{ x: leftImageX, transition: { delay: 0.6 } }}>
             <Image src={img5} width={190} height={200} className="ml-2 rounded-xl" />
           </motion.div>
-          <motion.div style={{ x: rightImageX, transition: { delay: 0.6 }}}>
+          <motion.div style={{ x: rightImageX, transition: { delay: 0.6 } }}>
             <Image src={img6} width={190} height={200} className="ml-6 rounded-xl" />
           </motion.div>
           {/* <Image src={img5} width={190} height={200} className="rounded-xl" /> */}
