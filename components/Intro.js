@@ -19,8 +19,8 @@ export default function Intro() {
   const textY = useTransform(scrollYProgress, [0, 1], [0, -100]);
   const chasingTextOpacity = useTransform(scrollYProgress, [0.2, 1], [0, 1]);
 
-  const leftTextX = useTransform(scrollYProgress, [0, 0.5], [0, -100]); // Move left
-  const rightTextX = useTransform(scrollYProgress, [0, 0.5], [0, 100]); // Move right
+  const leftTextX = useTransform(scrollYProgress, [0, 0.5], [0, -240]); // Move left
+  const rightTextX = useTransform(scrollYProgress, [0, 0.5], [-240, 100]); // Move right
 
   const leftImageX = useTransform(scrollYProgress, [0, 0.5], [-100, 0]); // Move left
   const rightImageX = useTransform(scrollYProgress, [0, 0.5], [100, 0]); // Move right
@@ -73,7 +73,10 @@ export default function Intro() {
         </motion.div>
       </div>
       <div className="-mt-56 ml-4 font-inter font-extrabold text-4xl">
-        <motion.h1 style={{ opacity: chasingTextOpacity }}>Chasing Light and Moments 📸✨</motion.h1>
+        <motion.h1 className="font-inter -ml-24" style={{ x: rightTextX }}>
+          Chasing Light and Moments 📸✨
+        </motion.h1>
+        {/* <motion.h1 style={{ opacity: textOpacity}}>Chasing Light and Moments 📸✨</motion.h1> */}
       </div>
       <div className="lg:flex">
         <div className="mt-10 flex ml-3 gap-2 mr-3">
