@@ -54,10 +54,10 @@ export default function Intro() {
                 </motion.h1>
 
                 <div className="grid">
-                  <motion.h1 className="font-inter lg:invisible ml-1" style={{ x: leftTextX }}>
+                  <motion.h1 className="font-inter lg:invisible ml-2" style={{ x: leftTextX }}>
                     Hey There
                   </motion.h1>
-                  <motion.h1 className="font-inter lg:invisible ml-1" style={{ x: leftTextX }}>
+                  <motion.h1 className="font-inter lg:invisible ml-2" style={{ x: leftTextX }}>
                     I&apos;m
                   </motion.h1>
                 </div>
