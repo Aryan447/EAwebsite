@@ -101,10 +101,10 @@ export default function Intro() {
         </div>
         <div className="mt-10 flex ml-3 gap-2 mr-3">
           <motion.div style={{ x: leftImageX, transition: { delay: 0.6 } }}>
-            <Image src={img5} width={190} height={200} className="ml-2 rounded-xl" />
+            <Image src={img8} width={150} height={200} className="ml-2 rounded-xl" />
           </motion.div>
           <motion.div style={{ x: rightImageX, transition: { delay: 0.6 } }}>
-            <Image src={img6} width={190} height={200} className="ml-6 rounded-xl" />
+            <Image src={img6} width={150} height={200} className="ml-3 rounded-xl" />
           </motion.div>
         </div>
       </div>
