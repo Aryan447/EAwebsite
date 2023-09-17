@@ -70,7 +70,7 @@ export default function Intro() {
                 I Turn Coffee into Code
               </motion.h1>
               <div className="grid content-center justify-center items-center lg:mt-36 mt-36 h-full">
-                <Image src={scrollDown} className="w-12 animate-bounce" />
+                <Image src={scrollDown} className="w-12 ml-10 animate-bounce" />
               </div>
             </motion.div>
           </div>
