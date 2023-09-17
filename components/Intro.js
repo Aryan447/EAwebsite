@@ -11,6 +11,7 @@ import img5 from '.././images/captures/img5.jpg'
 import img6 from '.././images/captures/img6.jpg'
 import img7 from '.././images/captures/img7.jpg'
 import img8 from '.././images/captures/img8.jpg'
+import scrollDown from '.././images/scrollDown.png'
 
 export default function Intro() {
   const { scrollYProgress } = useScroll();
@@ -68,6 +69,9 @@ export default function Intro() {
               <motion.h1 className="font-inter lg:-mt-8 ml-0.5" style={{ x: leftTextX }}>
                 I Turn Coffee into Code
               </motion.h1>
+              <div className="grid content-center justify-center items-center mt-72 h-full">
+                <Image src={scrollDown} className="w-12 animate-bounce" />
+              </div>
             </motion.div>
           </div>
         </motion.div>
