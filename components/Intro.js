@@ -62,14 +62,14 @@ export default function Intro() {
                     I&apos;m
                   </motion.h1>
                 </div>
-                <motion.h1 className="gradient mt-10 -ml-28 lg:ml-20 lg:mt-0 gradient-text font-inter" style={{ x: leftTextX }}>
+                <motion.h1 className="gradient mt-10 -ml-28 lg:ml-16 lg:mt-0 gradient-text font-inter" style={{ x: leftTextX }}>
                   ARYAN
                 </motion.h1>
               </div>
               <motion.h1 className="font-inter lg:-mt-8 ml-0.5" style={{ x: leftTextX }}>
                 I Turn Coffee into Code
               </motion.h1>
-              <div className="grid content-center justify-center items-center mt-56 h-full">
+              <div className="grid content-center justify-center items-center lg:mt-36 mt-56 h-full">
                 <Image src={scrollDown} className="w-12 animate-bounce" />
               </div>
             </motion.div>
@@ -83,28 +83,29 @@ export default function Intro() {
         {/* <motion.h1 style={{ opacity: textOpacity}}>Chasing Light and Moments 📸✨</motion.h1> */}
       </div>
       <div className="lg:flex">
-        <div className="mt-10 flex ml-3 gap-2 mr-3">
+        <div className="mt-10 flex ml-3 gap-3 mr-3">
           <motion.div style={{ x: leftImageX, transition: { delay: 0.2 } }}>
-            <Image src={img7} width={190} height={200} className="rounded-xl" />
+            {/* <Image src={img7} width={190} height={200} className="rounded-xl" /> */}
+            <Image src={img7} className="h-56 w-48 rounded-xl" />
           </motion.div>
           <motion.div style={{ x: rightImageX, transition: { delay: 0.2 } }}>
-            <Image src={img2} width={190} height={200} className="rounded-xl" />
+            <Image src={img2} className="h-56 w-48 rounded-xl" />
           </motion.div>
         </div>
-        <div className="mt-10 flex ml-3 gap-2 mr-3">
+        <div className="mt-10 flex ml-3 gap-3 mr-3">
           <motion.div style={{ x: leftImageX, transition: { delay: 0.4 } }}>
-            <Image src={img3} width={190} height={200} className="rounded-xl" />
+            <Image src={img3} className="h-56 w-48 rounded-xl" />
           </motion.div>
           <motion.div style={{ x: rightImageX, transition: { delay: 0.4 } }}>
-            <Image src={img4} width={190} height={200} className="rounded-xl" />
+            <Image src={img4} className="h-56 w-48 rounded-xl" />
           </motion.div>
         </div>
-        <div className="mt-10 flex ml-3 gap-2 mr-3">
+        <div className="mt-10 flex ml-3 gap-3 mr-3">
           <motion.div style={{ x: leftImageX, transition: { delay: 0.6 } }}>
-            <Image src={img8} width={150} height={200} className="ml-2 rounded-xl" />
+            <Image src={img8} className="h-56 w-48 rounded-xl" />
           </motion.div>
           <motion.div style={{ x: rightImageX, transition: { delay: 0.6 } }}>
-            <Image src={img6} width={150} height={200} className="ml-3 rounded-xl" />
+            <Image src={img6} className="h-56 w-48 rounded-xl" />
           </motion.div>
         </div>
       </div>
