@@ -69,7 +69,7 @@ export default function Intro() {
               <motion.h1 className="font-inter lg:-mt-8 ml-0.5" style={{ x: leftTextX }}>
                 I Turn Coffee into Code
               </motion.h1>
-              <div className="grid content-center justify-center items-center lg:mt-36 mt-56 h-full">
+              <div className="grid content-center justify-center items-center lg:mt-36 mt-36 h-full">
                 <Image src={scrollDown} className="w-12 animate-bounce" />
               </div>
             </motion.div>
