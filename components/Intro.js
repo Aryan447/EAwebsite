@@ -54,10 +54,10 @@ export default function Intro() {
                 </motion.h1>
 
                 <div className="grid">
-                  <motion.h1 className="font-inter lg:invisible -ml-1" style={{ x: leftTextX }}>
+                  <motion.h1 className="font-inter lg:invisible ml-1" style={{ x: leftTextX }}>
                     Hey There
                   </motion.h1>
-                  <motion.h1 className="font-inter lg:invisible -ml-1" style={{ x: leftTextX }}>
+                  <motion.h1 className="font-inter lg:invisible ml-1" style={{ x: leftTextX }}>
                     I&apos;m
                   </motion.h1>
                 </div>
@@ -86,9 +86,6 @@ export default function Intro() {
           <motion.div style={{ x: rightImageX, transition: { delay: 0.2 } }}>
             <Image src={img2} width={190} height={200} className="rounded-xl" />
           </motion.div>
-
-          {/* <Image src={img7} width={190} height={200} className="rounded-xl" /> */}
-          {/* <Image src={img2} width={190} height={200} className="rounded-xl" /> */}
         </div>
         <div className="mt-10 flex ml-3 gap-2 mr-3">
           <motion.div style={{ x: leftImageX, transition: { delay: 0.4 } }}>
@@ -97,8 +94,6 @@ export default function Intro() {
           <motion.div style={{ x: rightImageX, transition: { delay: 0.4 } }}>
             <Image src={img4} width={190} height={200} className="rounded-xl" />
           </motion.div>
-          {/* <Image src={img3} width={190} height={200} className="rounded-xl" /> */}
-          {/* <Image src={img4} width={190} height={200} className="rounded-xl" /> */}
         </div>
         <div className="mt-10 flex ml-3 gap-2 mr-3">
           <motion.div style={{ x: leftImageX, transition: { delay: 0.6 } }}>
@@ -107,8 +102,6 @@ export default function Intro() {
           <motion.div style={{ x: rightImageX, transition: { delay: 0.6 } }}>
             <Image src={img6} width={190} height={200} className="ml-6 rounded-xl" />
           </motion.div>
-          {/* <Image src={img5} width={190} height={200} className="rounded-xl" /> */}
-          {/* <Image src={img6} width={190} height={200} className="rounded-xl" /> */}
         </div>
       </div>
       <motion.button
