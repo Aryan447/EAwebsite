@@ -18,7 +18,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="flex space-x-5 font-extrabold font-inter">
+    <div className="flex space-x-5 font-extrabold font-inter w-screen">
       <motion.div className="font-extrabold text-4xl" variants={containerVariants} initial="hidden" animate="visible">
         <motion.button {...linkMotionProps} className='text-sm ml-3'>
           <Link href='/'>Home</Link>
@@ -37,6 +37,11 @@ export default function Navbar() {
       <motion.div className="font-extrabold text-4xl" variants={containerVariants} initial="hidden" animate="visible">
         <motion.button {...linkMotionProps} className='text-sm'>
           <Link href='#'>Contact</Link>
+        </motion.button>
+      </motion.div>
+      <motion.div className="font-extrabold text-4xl" variants={containerVariants} initial="hidden" animate="visible">
+        <motion.button {...linkMotionProps} className='text-sm'>
+          <Link href='/#Photos'>Photos</Link>
         </motion.button>
       </motion.div>
     </div>

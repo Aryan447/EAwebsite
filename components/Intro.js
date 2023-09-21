@@ -2,6 +2,7 @@
 
 import Head from "next/head";
 import Image from "next/image";
+import { useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import img1 from '.././images/captures/img1.jpg'
 import img2 from '.././images/captures/img2.jpg'
@@ -40,11 +41,54 @@ export default function Intro() {
   };
 
 
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <>
       <head>
         <title>Aryan&apos;s Portfolio</title>
       </head>
+
+      {/* <div className="ml-2 h-1 w-6 bg-white rounded-3xl"> </div>
+      <div className="ml-2 mt-1 h-1 w-6 bg-white rounded-3xl"> </div>
+      <div className="ml-2 mt-1 h-1 w-6 bg-white rounded-3xl"> </div> */}
+
+      <div className="fixed top-4 right-4 cursor-pointer" onClick={toggleMenu}>
+        <div className="w-6 h-6 relative">
+          <motion.div
+            initial={false}
+            animate={{ rotate: isOpen ? 35 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-1/2 left-1/2 mt-1 w-4 h-0.5 bg-white rounded-2xl transform -translate-x-2/4 -translate-y-2/4"
+          ></motion.div>
+          <motion.div
+            initial={false}
+            animate={{ scaleX: isOpen ? 0 : 1 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-1/2 left-1/2 mt-2 w-4 h-0.5 bg-white rounded-2xl transform -translate-x-2/4 -translate-y-2/4"
+          ></motion.div>
+          <motion.div
+            initial={false}
+            animate={{ rotate: isOpen ? -35 : 0 }}
+            transition={{ duration: 0.3 }}
+            className="absolute top-1/2 left-1/2 w-4 mt-3 h-0.5 bg-white rounded-2xl transform -translate-x-2/4 -translate-y-2/4"
+          ></motion.div>
+        </div>
+        <div className={`transition-opacity duration-300 absolute top-14 right-4 bg-white text-black rounded-lg shadow-lg p-4 ${isOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
+          <ul className="space-y-2">
+            <li><a href="#" className="block">Home</a></li>
+            <li><a href="#" className="block">About</a></li>
+            <li><a href="#" className="block">Projects</a></li>
+            <li><a href="#" className="block">Contact</a></li>
+            {/* Add more menu items as needed */}
+          </ul>
+        </div>
+      </div>
+
       <div className="mt-56 -ml-4 font-extrabold text-4xl">
         <motion.div className="font-extrabold text-4xl" variants={containerVariants} initial="hidden" animate="visible">
           <div className="parallax-container">
@@ -77,7 +121,7 @@ export default function Intro() {
         </motion.div>
       </div>
       <div className="-mt-56 ml-4 font-inter font-extrabold text-4xl">
-        <motion.h1 className="font-inter -ml-24" style={{ x: rightTextX }}>
+        <motion.h1 id='Photos' className="font-inter -ml-24" style={{ x: rightTextX }}>
           Chasing Light and Moments 📸✨
         </motion.h1>
         {/* <motion.h1 style={{ opacity: textOpacity}}>Chasing Light and Moments 📸✨</motion.h1> */}
