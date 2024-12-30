@@ -2,7 +2,6 @@
 
 import Head from "next/head";
 import { ChevronsDown } from 'lucide-react';
-import { Button } from "@/components/ui/button"
 
 export default function Intro() {
   return (
@@ -21,7 +20,6 @@ export default function Intro() {
           <h1 className="text-white font-bold ml-8 mt-2">
             Automate Your Trading, Maximise Your Profits
           </h1>
-          <Button variant="outline">Button</Button>
           <div className="flex items-center justify-center gap-2 mt-80">
             <h2 className="text-2xl">
               Scroll down to see more content
