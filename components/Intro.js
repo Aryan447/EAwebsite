@@ -7,7 +7,7 @@ export default function Intro() {
   return (
     <>
       <Head>
-        <title>Aryan's Portfolio</title>
+        <title>EA</title>
       </Head>
 
       <div className="relative h-screen">
@@ -15,7 +15,7 @@ export default function Intro() {
 
         <div className="relative z-10 h-full flex flex-col">
           <h1 className="text-white text-4xl font-bold ml-8 mt-40">
-            Carlos Cario's EA
+            Carlos Cario &apos s EA
           </h1>
           <h1 className="text-white font-bold ml-8 mt-2">
             Automate Your Trading, Maximise Your Profits
